@@ -1,0 +1,21 @@
+function dup(arr){
+array1 = arr;
+concat = array1.concat(arr);
+  arr=concat;
+  x=0;
+ console.log(concat);
+for(i=0; i<arr.length; i=i+2){
+  if (i%2===0){
+    arr[i]=array1[x]
+    x=x+1
+    }
+  }
+console.log(arr);
+  y=0
+for(i=1; i<arr.length; i=i+2){
+    arr[i]=array1[y]
+    y=y+1
+  }  
+  return arr
+}
+console.log(dup([4,'Ulysses', 42, false]));

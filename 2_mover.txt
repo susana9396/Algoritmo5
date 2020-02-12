@@ -1,0 +1,16 @@
+function mover(arr){
+array1 = arr;
+  x=1;
+for(i=0; i<arr.length; i++){
+    if(i<arr.length-1){
+    arr[i]=array1[x];
+    x=x+1
+    }else if (i===arr.length-1){
+      arr[i]=0;
+    }
+  }
+   
+  return arr
+}
+
+console.log(mover([1,2,3]));

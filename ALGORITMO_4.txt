@@ -1,0 +1,52 @@
+1. function greY(arr,Y){
+  var count=0;
+   for(i=0;i<arr.length;i++){
+       if(arr[i]>Y){
+       count++;
+      }
+     }
+    return count;
+} 
+
+console.log(greY([1,5,9],2))
+
+2. function maxminavg(arr){
+   var arrnew=[];
+   var sum=0;
+   var max=arr[0];
+   var min=arr[0];
+   for(i=0;i<arr.length;i++){
+       sum+=arr[i];
+       if(max<arr[i]){
+          max=arr[i];
+       }else {
+          min=arr[i];
+       }
+     }
+   sum=sum/arr.length;
+    arrnew[0]=max;
+    arrnew[1]=min;
+    arrnew[2]=sum;
+    return arrnew;
+  }
+
+console.log(maxminavg([1,2,3,4,5]))
+
+3. function neg(arr){
+   for(i=0;i<arr.length;i++){
+       if(arr[i]<0){
+       arr[i]='Dojo';
+       }
+     }
+   return arr;
+}
+
+console.log(neg([1,-8,6,-9]));
+
+4. function rem(arr,x,y){
+      var dif=y-x+1;
+      arr.splice(x,dif);
+      return arr; 
+     
+}
+   console.log(rem([1,2,4,6,7,1],4,9));

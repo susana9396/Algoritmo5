@@ -1,0 +1,35 @@
+while (i>0){  +*
+  i++
+}
+----------------------------------
+switch (x){
+    case="i":
+     console.log('es 1');
+     break;
+    case="B":
+     console.log('es b');
+     break;
+   Default:
+     console.log('no se');
+----------------------------------
+if (x=='a'){
+    console.log('es a');
+}else{
+    if(x=='b'){
+    console.log('es b');
+}else{
+    console.log('no se');
+}
+------------------------------------
+var x=10
+
+do{                     * SE EJECUTARÁ AL MENOS UNA VEZ
+  console.log(x)
+  x=x-2;
+while(x>0); 
+----------------------------------
+
+
+
+     
+
