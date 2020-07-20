@@ -19,7 +19,7 @@ console.log(greY([1,5,9],2))
        sum+=arr[i];
        if(max<arr[i]){
           max=arr[i];
-       }else {
+       }else if (min>arr[i]) {
           min=arr[i];
        }
      }
